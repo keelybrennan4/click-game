@@ -1,14 +1,17 @@
 import React from 'react';
-//import Header from './components/Header'
+import Header from './components/Header';
+import Game from './components/Game';
+
 //import other components here 
-//<Header />
 
 const App = () => {
   return (
-      <div>
-          
-          
-      </div>
+    <div>
+      
+        <Header />
+        <Game />
+
+    </div>
   );
 };
 
