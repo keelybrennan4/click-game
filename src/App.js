@@ -1,13 +1,15 @@
 import React from 'react';
-//import Header from './components/Header';
+import Header from './components/Header';
 //import Game from './components/Game';
 import Card from './components/Card';
+import './App.css';
+
 
 //import other components here 
 class App extends React.Component {
   constructor (props){
       super (props);
-      this.shuffleImages = this.shuffleImages.bind(this);
+      //this.shuffleImages = this.shuffleImages.bind(this);
       this.handleGuess = this.handleGuess.bind(this);
       this.handleReset = this.handleReset.bind(this);
       this.state = {
@@ -30,40 +32,44 @@ class App extends React.Component {
       };
       //this.gameOver = false;
     }
+
     //method to shuffle images after each click 
-    shuffleImages(){
-      this.setState(() => {
-        const randomNum = Math.floor(Math.random() * this.state.images.length);
-        const image = this.state.images[randomNum];
-        alert(image);
-        //};
-      });
-  
-    };
+
 
     //method to check if image had already been selected 
     //check if an image was clicked more than one time. If yes, game over. If no, add one point.
     handleGuess(){
-      console.log("handle guess")
-    }
+      
+      console.log("handle guess");
+      
+    };
 
     //method to reset game if a single image is clicked more than once 
     handleReset(){
-      console.log("handle guess")
+      console.log("handle reset")
     };
 
 render(){
   return (
-    <div className="grid">
-      {this.state.images.map(img => {
-        return (<div key={img}>
-          <Card img={img} onClick={() => this.handleGuess(img)} />
-    </div>);
-    })
-    }
+    <div className="game">
+    
+    <Header />
+    
+      <div className="grid">
+        {
+          this.state.images.map(img => {
+          return (<div key={img}>
+          <Card img={img} onClick={() => this.handleGuess(img)
+        }/>
+      </div>);
+        })
+        }
     </div>
-  )
-}
+
+  </div>
+  );
+};
+
 
 
 

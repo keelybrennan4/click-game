@@ -1,6 +1,4 @@
-//navbar with li elements
-    //heading text 
-    //score with counter function
+//score with counter function
 
 import React from 'react';
 import './Header.css';
@@ -10,8 +8,8 @@ const Header = props => (
         <nav className="navbar">
             <ul>
                 <li className="brand">
-                    <a href="/"><h1>Clicky Game</h1></a>
-                </li>
+                    <a href="/"><h1>City Skyline Memory Game</h1></a>
+                </li><br></br>
                 <li className="score">
                     Score: {props.score}
                 </li>
