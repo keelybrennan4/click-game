@@ -6,5 +6,4 @@ const Card = (props) => {
         <img src = {props.img} onClick={props.onClick} className="img-fluid img-thumbnail card" alt={props.img} />
     );
 };
-
 export default Card;
