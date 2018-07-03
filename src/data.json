@@ -1,12 +1,56 @@
 [
     {
        "id": 1,
-       "image": "/assets/images/name.png",
-       "clicked": false 
+       "image": "assets/images/chicago.png"
+
     },
     {
-    "id": 2,
-    "image": "/assets/images/name2.png",
-    "clicked": false 
-    }
+        "id": 2,
+        "image": "assets/images/dc.png"
+    },
+    {
+        "id": 3,
+        "image": "assets/images/denver.png"
+ 
+     },
+     {
+         "id": 4,
+         "image": "assets/images/hawaii.png"
+     },
+     {
+        "id": 5,
+        "image": "assets/images/houston.png"
+ 
+     },
+     {
+         "id": 6,
+         "image": "assets/images/la.png"
+     },
+     {
+        "id": 7,
+        "image": "assets/images/mpls.png"
+ 
+     },
+     {
+         "id": 8,
+         "image": "assets/images/nola.png"
+     },
+     {
+        "id": 9,
+        "image": "assets/images/nyc.png"
+ 
+     },
+     {
+         "id": 10,
+         "image": "assets/images/seattle.png"
+     },
+     {
+        "id": 11,
+        "image": "assets/images/sf.png"
+ 
+     },
+     {
+         "id": 12,
+         "image": "assets/images/vegas.png"
+     }
 ]
