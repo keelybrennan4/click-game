@@ -68,7 +68,7 @@ render(){
 
       <Wrapper>
       {this.state.data.map(img => (
-        <Card 
+        <Card
           shuffle={this.shuffle}
           id={img.id}
           key={img.id}

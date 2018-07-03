@@ -1,6 +1,7 @@
 import React from "react";
+import './Wrapper.css';
 
-//wrap inner component within this one 
+//wrapper wraps all the inner components together 
 const Wrapper = props => <div className="wrapper">{props.children}</div>;
 
 export default Wrapper;

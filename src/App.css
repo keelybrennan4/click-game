@@ -1,22 +1,8 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-content: center;
-  justify-content: center;
-  grid-gap: 15px;
-  margin-top: 10px;
-}
-.game {
-  display: flex;
-  min-height: 80%;
+body {
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  margin: 0 auto;
+  margin: 5 auto;
   background-color: #ECECEC;
   padding-bottom: 50px;
 }
-.status{
-  text-align: right;
-  margin-left: 100px;
-}
+
