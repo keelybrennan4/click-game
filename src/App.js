@@ -12,7 +12,8 @@ class App extends Component {
     data,
     clicked: [],
     score: 0,
-    topScore: 0
+    topScore: 0,
+    status: "Click on an image and earn one point. Click the same image twice and you lose!"
   };
 
 //shuffle images 
@@ -23,7 +24,7 @@ shuffle = id => {
       clicked: [],
       score: 0,
       topScore: this.setState.score,
-      status: "You've Lost. Try Again!"
+      status: "You've lost. Try again!"
     });
     return;
 
@@ -39,7 +40,7 @@ shuffle = id => {
     clicked,
     score: clicked.length,
     topScore: this.state.topScore,
-    status: ""
+    status: "Nice. You earned one point!"
   });
 
   for (let i =data.length - 1; i>0; i--) {
@@ -52,8 +53,6 @@ newTopScore = () => {
     topScore: newState.score
   }))
 }
-
-
 render(){
   return (
     <div className="game">
@@ -63,9 +62,6 @@ render(){
       topScore={this.state.topScore}
       status={this.state.status}
     />
-
-    <div className="grid">
-
       <Wrapper>
       {this.state.data.map(img => (
         <Card
@@ -77,7 +73,6 @@ render(){
       ))}
       </Wrapper>
     </div>
-  </div>
   );
   }
 }

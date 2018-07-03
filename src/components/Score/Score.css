@@ -1,0 +1,10 @@
+.scoreBoard {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #314455;
+}
+.score{ 
+    font-size: 40px;
+}
